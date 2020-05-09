@@ -1,0 +1,13 @@
+Trees by Andrew Cassidy
+Node values in the form: (X,Y,Z)
+
+BST T1 made and sorted on X
+
+Traversing T1 symmetrically:
+
+BST T2 made by copy and pasting nodes from T1 in pre order and sorted on Y
+
+Traversing T2 in post order:
+
+Looking for node in T2 with Y value equal or closest to: 1321405333
+Tree is empty. Nothing to search for.

@@ -1,1 +1,73 @@
+Author: Andrew Cassidy
+Date: 2/3/20
+Description: README file for the trees appication (CS315 - Assignment 2).
 
+Welcome to my trees app!
+
+Instructors/Graders:
+
+        Whats your goal?
+
+        After unzipping the contents of my zip file to your working directory...
+
+	1. To compile the cards game:
+                .$: make
+	2. To run the cards game:
+		.$: make run
+	3. Change seed or number of nodes?
+		top of the makefile are the two variables to change
+
+Application Description:
+	
+	1. It takes a single integer parameter: the number n of data points in
+	the tree.
+	
+	2. It reads n points from standard input. Each point has three integer
+	components, which we call X, Y, and Z.
+	
+	3. As it reads those points, it places them in an initially empty
+	binary tree T1 sorted on the X value.
+	
+	4. It traverses T1 in symmetric order, printing each point to standard
+	output on a separate line in this format: (342, 512, 56311232)
+	
+	5. It traverses T1 in preorder, placing each node in an initially
+	empty binary tree T2 sorted on the Y value.
+	
+	6. It traverses T2 in postorder, printing each point on a separate
+	line in the same format as before.
+	
+	7. It reads one more integer from standard input: the probe p, a Y
+	value. It searches for p in T2, printing the last point it encounters
+	as it descends through T2, which might have p itself as its Y value,
+	or its Y value might just be close to p.	
+
+Contents list for proper app usage: 
+	
+	[trees.cpp, bsTree.cpp, bsTree.h, treeNode.h, randGen.pl, makefile, README]
+
+	Contents notes:
+
+		trees.cpp - main function for the app. This also includes
+		traversal functions and a search function as well.
+
+		bsTree.(cpp/h) - BST class prototype and implementation
+
+		treeNode.h - BST node with 3 data members (X,Y,Z) and pointers
+		left and right to other treeNodes.
+
+		makefile - some helpful commands for deving this app or
+		running it.
+
+		randGen.pl - a program to generate an appropriate stream of
+		pseudo-random numbers in the range 0 .. 2^31‒1. This program,
+		written in Perl, takes an optional parameter called seed.	
+
+App output:
+	
+	By default, the output will be stored in tmpRun.out in your
+	working directory.
+
+For further questions:
+	
+	email: andrew.cassidy@uky.edu
