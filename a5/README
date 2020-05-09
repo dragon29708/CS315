@@ -1,1 +1,105 @@
+Author: Andrew Cassidy
+Date: 4/27/20
+Description: README file for the genealogy application (CS315 - Assignment 5).
 
+Welcome to my app!
+
+Instructors/Graders:
+
+        Whats your goal?
+
+        After unzipping the contents of my zip file to your working directory...
+
+	1. To compile:
+
+          .$: make
+
+    2. To run:
+
+    			.$: make run
+
+    3. To change the text file:
+
+    			Open the makefile and change the DATA variable on line 8
+
+Application Description:
+
+  A family tree program called genealogy that takes the following commands:
+
+  Person n Parent n Marriage n
+  Family n Husband n Wife n Child n Child n ...
+  Verify
+  Relate n n
+  Here, n stands for an integer. Each command is on its own line.
+
+  The Person command introduces a person vertex and connects it to two family
+  vertices by "parents" and "marriage" edges. For instance,
+  Person 13 Parent 0 Marriage 7 means "Person 13 has unknown parents and is
+  connected to family 7 by marriage." Those family vertices may have already
+  been introduced, or they may be introduced later. The number 0 always
+  means "unknown". When it receives this command, the program should output a
+  line like "Person 13 has parents 0 and is married in family 7".
+  Although in actual practice people sometimes have multiple marriages over
+  the course of their life, for this assignment, a person has at
+  most one marriage.
+
+  The Family command introduces a family vertex and connects it to person
+  vertices by "husband", "wife", and "child" edges. The command mentions as
+  many "child" edges as necessary; a family with no children has no "child"
+  edges. Those person vertices may have already been introduced, or they may be
+  introduced later. When it receives this command, the program should output a
+  line like "Family 2 has husband 0, wife 34, and children 3 8." Although in
+  actual practice there are situations of same-sex marriages, for this
+  assignment, marriages have at most one husband and one wife.
+
+  The Verify command asks the program to check the data for consistency.
+  Whenever a person vertex points to a family vertex (either as parent or
+  marriage), that family vertex must point back to the individual (as child or
+  husband/wife, respectively), and whenever a family vertex points to a person
+  vertex, that person vertex must point back to the family in the appropriate
+  way. The program should either print "The data are consistent" or one or
+  more lines of the form "Person 4 points to parent family 56 but there is
+  no back-pointer" or "Family 23 points to wife person 2 but there is no
+  back-pointer".
+
+  The Relate command asks for the shortest path between two persons. For
+  instance, Relate 5 8 asks how persons 5 and 8 are related to each other.
+  If they are not in the same connected component of the graph, the program
+  should print a line like "Persons 5 and 8 are not connected." If they are in
+  the same connected component, the program should print a line showing the
+  shortest path connecting them, in the form:
+  "person 5 -> family 2 -> person 18 -> family 6 -> person 8".
+  If there are several shortest paths, it only prints one of them. If there
+  is a missing back-pointer, the Relate command might fail to find a path.
+
+Contents list for proper app usage:
+
+	[genealogy.cpp, familyTree.(cpp/h), family.(cpp/h), person.(cpp/h),
+  A5queue.h, makefile, README]
+
+	Contents notes:
+
+		genealogy.cpp - main functions for the app. Follows the app
+    description step by step
+
+		familyTree.(cpp/h) - container for all family and person nodes in
+    the tree.
+
+		family.(cpp/h) - a single node that represents a family object
+
+		person.(cpp/h) - a single node that represents a person object
+
+    A5queue.h - a queue object that is used in finding the shortest path
+    between two vertices
+
+		makefile - some helpful commands for deving this app or
+		running it.
+
+App output:
+
+	By default, the output will be stored in tmpRun.out in your
+	working directory.
+
+For further questions:
+
+	email: andrew.cassidy@uky.edu

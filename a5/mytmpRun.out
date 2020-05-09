@@ -1,0 +1,48 @@
+Person 1 has parents 2 and is married in family 1
+Person 3 has parents 2 and is married in family 2
+Person 4 has parents 3 and is married in family 1
+Person 2 has parents 5 and is married in family 2
+Family 2 has husband, 3, wife 2, and children 1, 3, 10, 11, 12, 9.
+Person 5 has parents 1 and is married in family 3
+Person 6 has parents 1 and is married in family 4
+Person 7 has parents 1 and is married in family 5
+Person 8 has parents 1 and is married in family 6
+Family 1 has husband, 1, wife 4, and children 5, 6, 7, 8, 13, 14, 15, 16.
+Person 4 points to parent family 3 but there is no back pointer
+Person 2 points to parent family 5 but there is no back pointer
+Person 5 points to marriage family 3 but there is no back pointer
+Person 6 points to marriage family 4 but there is no back pointer
+Person 7 points to marriage family 5 but there is no back pointer
+Person 8 points to marriage family 6 but there is no back pointer
+Family 2 points to child person 10 but there is no back pointer
+Family 2 points to child person 11 but there is no back pointer
+Family 2 points to child person 12 but there is no back pointer
+Family 2 points to child person 9 but there is no back pointer
+Family 1 points to child person 13 but there is no back pointer
+Family 1 points to child person 14 but there is no back pointer
+Family 1 points to child person 15 but there is no back pointer
+Family 1 points to child person 16 but there is no back pointer
+Person 9 has parents 2 and is married in family 3
+Person 10 has parents 2 and is married in family 4
+Person 11 has parents 2 and is married in family 5
+Person 12 has parents 2 and is married in family 6
+Person 13 has parents 1 and is married in family 3
+Person 14 has parents 1 and is married in family 4
+Person 15 has parents 1 and is married in family 5
+Person 16 has parents 1 and is married in family 6
+Family 3 has husband, 9, wife 13, and children 5.
+Family 4 has husband, 10, wife 14, and children 6.
+Family 5 has husband, 11, wife 15, and children 7.
+Family 6 has husband, 12, wife 16, and children 8.
+Person 4 points to parent family 3 but there is no back pointer
+Person 2 points to parent family 5 but there is no back pointer
+Person 5 points to marriage family 3 but there is no back pointer
+Person 6 points to marriage family 4 but there is no back pointer
+Person 7 points to marriage family 5 but there is no back pointer
+Person 8 points to marriage family 6 but there is no back pointer
+Family 3 points to child person 5 but there is no back pointer
+Family 4 points to child person 6 but there is no back pointer
+Family 5 points to child person 7 but there is no back pointer
+Family 6 points to child person 8 but there is no back pointer
+person 9 -> family 2 -> person 1
+person 8 -> family 1 -> person 6
