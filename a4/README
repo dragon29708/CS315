@@ -1,1 +1,62 @@
+Author: Andrew Cassidy
+Date: 3/31/20
+Description: README file for the wordCount appication (CS315 - Assignment 4).
 
+Welcome to my app!
+
+Instructors/Graders:
+
+        Whats your goal?
+
+        After unzipping the contents of my zip file to your working directory...
+
+	1. To compile:
+
+                .$: make
+
+    2. To run:
+
+    			.$: make run
+
+    3. To change the text file:
+
+    			Open the makefile and change the DATA variable on line 8
+
+Application Description:
+
+	1. Takes a text file as an argument to the program.
+
+	2. Reads all strings in the text file. (a string here is a continious set of non space chars)
+
+	3. Stores all strings in a hash table
+
+	4. Prints the strings in alphabetical order with their associted occurances (counts) in the file
+
+	5. Prints the strings in order from highest num of occurances to least num of occurances
+
+Contents list for proper app usage:
+
+	[wordCount.cpp, wordHash.(cpp/h), LList.(cpp/h), node.(cpp/h), makefile, README]
+
+	Contents notes:
+
+		wordCount.cpp - main function for the app. Follows the app description step by step
+
+		wordHash.(cpp/h) - hash class prototype and implementation. See data
+		and function members in the code for the best understanding.
+
+		LList.(cpp/h) - LList that are the elements of the hash table.
+
+		node.(cpp/h) - LList node for the LList's in the hash table.
+
+		makefile - some helpful commands for deving this app or
+		running it.
+
+App output:
+
+	By default, the output will be stored in tmpRun.out in your
+	working directory.
+
+For further questions:
+
+	email: andrew.cassidy@uky.edu
