@@ -1,1 +1,63 @@
+Author: Andrew Cassidy
+Date: 3/12/20
+Description: README file for the kd appication (CS315 - Assignment 3).
 
+Welcome to my kd app!
+
+Instructors/Graders:
+
+        Whats your goal?
+
+        After unzipping the contents of my zip file to your working directory...
+
+	1. To compile the kd app:
+                .$: make
+	2. To run the kd app:
+		.$: make run
+	3. Change seed or number of nodes?
+		top of the makefile are the two variables to change
+
+Application Description:
+
+	1. Takes a parameter n, which should be a positive integer, indicating how
+	many data points are to be placed in the tree, and a parameter p,
+	indicating the number of probes into the tree.
+
+	2. Reads from standard input a list of n 4-dimensional integer data points.
+
+	3. Builds a k-d tree with those n values using the offline method, with
+	b set to 10 (and ties going to the left subtree)
+
+	4. Reads p 4-dimensional data values, called probes, and for each probe,
+	lists all the data points stored in the bucket where the probe would be
+	found if it were in the tree.
+
+Contents list for proper app usage:
+
+	[kd.cpp, kdTree.cpp, kdTree.h, kdNode.h, kdNode.cpp, randGen.pl, makefile, README]
+
+	Contents notes:
+
+		kd.cpp - main function for the app. Follows the app description step by step
+
+		kdTree.(cpp/h) - K-D tree class prototype and implementation. See data
+		and function members in the code for the best understanding.
+
+		treeNode.(cpp/h) - K-D tree node with member functions that
+		practically build the tree itself! For data members and
+
+		makefile - some helpful commands for deving this app or
+		running it.
+
+		randGen.pl - a program to generate an appropriate stream of
+		deterministic pseudo-random numbers in the range 0 .. SEED.
+		This program, written in Perl, takes an optional parameter called seed.
+
+App output:
+
+	By default, the output will be stored in tmpRun.out in your
+	working directory.
+
+For further questions:
+
+	email: andrew.cassidy@uky.edu
